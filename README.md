@@ -1,12 +1,25 @@
-# Exploring Memory Allocation Strategies in the Linux Kernel: A Case Study of SLUB vs SLOB
+# My Simple Operating System
 
-This repository presents a comprehensive exploration of memory allocation strategies within the Linux Kernel, focusing on a comparative analysis between SLUB and SLOB. The research, conducted by a single individual, includes the implementation of custom operating system code tailored specifically for this study.
+This repository contains the source code for my simple operating system project. Currently, the operating system only displays "Hello, World!" on the screen.
 
-Key Objectives:
-- Delve into the design principles underlying SLUB and SLOB
-- Assess the memory management overhead associated with each strategy
-- Measure the performance metrics of allocation and deallocation operations
-- Investigate the implications on system stability and resource utilization
+## Getting Started
+To get a copy of the project up and running on your local machine, simply clone this repository and follow the instructions in the README file.
 
-Through this solitary research endeavor, the repository aims to provide valuable insights into memory allocation mechanisms in the Linux Kernel and contribute to the ongoing discourse on optimizing memory management for diverse operating system environments.
+## Prerequisites
+- NASM
+- QEMU
+
+## Build and Run
+1. Navigate to the project directory
+2. Run `make`
+3. Run `make run`
+
+## Contributing
+I welcome any contributions or suggestions to improve this project. Feel free to submit a pull request or open an issue.
+
+## Acknowledgments
+I would like to thank the following resources for their valuable insights and guidance:
+- OSDev Wiki
+- Stack Overflow
+- Various online tutorials and forums
 
