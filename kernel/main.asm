@@ -1,12 +1,15 @@
-org 0x7E00      ; matches jump target in boot.asm
+; kernel/main.asm
+org 0x7E00
 bits 16
 
-start_kernel:
-    mov si, message
+start:
+    mov si, msg
     call print_string
-    jmp $
+    cli
+.halt:
+    hlt
+    jmp .halt
 
-; --- Print routine ---
 print_string:
     mov ah, 0x0E
 .repeat:
@@ -18,4 +21,7 @@ print_string:
 .done:
     ret
 
-message db 'Hello from kernel!', 0
+msg db 'Hello from kernel', 0
+
+times 512-($-$$) db 0  ; pad kernel to 1 sector
+
